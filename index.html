@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta name="description" content="a simple alarm clock using HTML, CSS & JS by Abdul Shakur Abbas Sakhr.">
+    <meta name="author" content="Abdul Shakur Abbas Sakhr (https://abdulshakurabbass.com)">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js"></script>
+</head>
+
+<body>
+    <div id="container">
+        <h1>Alarm clock</h1>
+        <div id="clock-container">
+            <div id="times">
+                <span>1</span><span>2</span><span>3</span><span>4</span><span>5</span><span>6</span><span>7</span><span>8</span><span>9</span><span>10</span><span>11</span><span>12</span>
+            </div>
+            <div id="sec-hand"></div>
+            <div id="min-hand"></div>
+            <div id="hour-hand"></div>
+        </div>
+        <div id="analog">
+            <span>00</span>
+            <span>00</span>
+            <span>00</span>
+            <button id="setAlarmBtn">Set alarm</button>
+            <button id="stopAlarmBtn">Stop alarm</button>
+        </div>
+    </div>
+
+    <div id="set-alarm-modal">
+        <h2>Set Alarm</h2>
+        <span>
+            <label>Time</label>
+            <input type="time" />
+        </span>
+        <span>
+            <label>Tune</label>
+            <select id="alarm-tune">
+                <option selected disabled>- select -</option>
+                <option value="tune-1">Tune 1</option>
+                <option value="tune-2">Tune 2</option>
+            </select>
+        </span>
+        <span>
+            <button id="set-alarm">Set</button>
+            <button id="cancel">Cancel</button>
+        </span>
+    </div>
+
+    <audio id="alarm-sound" autoplay></audio>
+</body>
+
+</html>
